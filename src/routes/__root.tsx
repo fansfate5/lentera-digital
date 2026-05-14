@@ -73,14 +73,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Lentera Digital — Jurnal Mahasiswa AMIKOM" },
+      { name: "description", content: "Karya ilmiah mahasiswa Sistem Informasi AMIKOM mengenai pendidikan, bisnis digital, dan AI." },
+      { name: "author", content: "Muhammad Izzul Fahmi Mustofa" },
+      { property: "og:title", content: "Lentera Digital — Jurnal Mahasiswa AMIKOM" },
+      { property: "og:description", content: "Karya ilmiah mahasiswa Sistem Informasi AMIKOM." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -115,6 +114,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
+      <Analytics />
     </QueryClientProvider>
   );
 }
