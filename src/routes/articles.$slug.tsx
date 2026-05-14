@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { getArticle, AUTHOR, articles } from "@/data/articles";
+import { getArticle, AUTHOR, articles, type Article } from "@/data/articles";
 
 export const Route = createFileRoute("/articles/$slug")({
   loader: ({ params }) => {
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/articles/$slug")({
 });
 
 function ArticlePage() {
-  const { article } = Route.useLoaderData();
+  const { article } = Route.useLoaderData() as { article: Article };
   const otherArticles = articles.filter((a) => a.slug !== article.slug);
 
   return (
