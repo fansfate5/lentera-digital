@@ -20,7 +20,7 @@ function HomePage() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="mx-auto max-w-5xl px-6 pt-16 pb-12">
+        <section className="mx-auto max-w-5xl px-6 pt-20 pb-20 md:pt-28 md:pb-28">
           <p className="text-xs uppercase tracking-[0.25em] text-accent mb-4">
             UTS Lingkungan Bisnis · 2025/2026
           </p>
