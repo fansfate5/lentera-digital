@@ -50,36 +50,40 @@ function HomePage() {
             <span className="text-sm text-muted-foreground">{articles.length} tulisan</span>
           </div>
 
-          <div className="divide-y divide-border">
-            {articles.map((a, i) => (
-              <article key={a.slug} className="py-8 group">
+          <div className="flex flex-col gap-5">
+            {articles.map((a) => (
+              <article
+                key={a.slug}
+                className="group relative bg-card border border-border rounded-2xl p-6 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 ease-out cursor-pointer hover:-translate-y-1"
+              >
                 <Link
                   to="/articles/$slug"
                   params={{ slug: a.slug }}
-                  className="grid md:grid-cols-[80px_1fr_auto] gap-6 items-start"
+                  className="flex flex-col gap-3"
                 >
-                  <div className="font-serif text-3xl text-muted-foreground/60 group-hover:text-accent transition-colors">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-accent mb-2">
+                  <div className="flex items-center gap-3">
+                    <span className="px-2.5 py-0.5 rounded-full bg-secondary text-accent text-xs font-semibold uppercase tracking-wider">
                       {a.category}
-                    </p>
-                    <h3 className="font-serif text-2xl md:text-3xl text-primary leading-tight group-hover:text-accent transition-colors">
+                    </span>
+                    <span className="text-muted-foreground text-xs font-medium">
+                      {a.publishedAt}
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-start gap-4">
+                    <h3 className="font-serif text-xl md:text-2xl text-primary leading-tight group-hover:text-accent transition-colors">
                       {a.title}
                     </h3>
-                    <p className="mt-3 text-muted-foreground leading-relaxed line-clamp-2">
-                      {a.abstract}
-                    </p>
-                    <div className="mt-3 flex items-center gap-3 text-xs text-muted-foreground">
-                      <span>{a.publishedAt}</span>
-                      <span>·</span>
-                      <span>{a.readTime}</span>
-                    </div>
+                    <ArrowRight
+                      strokeWidth={2.5}
+                      className="w-5 h-5 text-muted-foreground/40 group-hover:text-accent group-hover:translate-x-1 transition-all shrink-0 mt-1"
+                    />
                   </div>
-                  <span className="text-sm text-accent opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
-                    Baca →
-                  </span>
+                  <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
+                    {a.abstract}
+                  </p>
+                  <div className="pt-1 flex items-center text-xs text-muted-foreground">
+                    <span>{a.readTime} baca</span>
+                  </div>
                 </Link>
               </article>
             ))}
