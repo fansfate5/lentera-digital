@@ -61,11 +61,11 @@ function HomePage() {
                   params={{ slug: a.slug }}
                   className="flex flex-col gap-3"
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="px-2.5 py-0.5 rounded-full bg-secondary text-accent text-xs font-semibold uppercase tracking-wider">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="px-2.5 py-0.5 rounded-full bg-secondary text-accent text-[10px] font-semibold uppercase tracking-wider whitespace-nowrap">
                       {a.category}
                     </span>
-                    <span className="text-muted-foreground text-xs font-medium">
+                    <span className="text-muted-foreground text-xs font-medium whitespace-nowrap">
                       {a.publishedAt}
                     </span>
                   </div>
