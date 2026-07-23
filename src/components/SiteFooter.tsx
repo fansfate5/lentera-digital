@@ -37,7 +37,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border/60 py-5 text-center text-xs text-muted-foreground">
-        © 2026 {AUTHOR.name} · UTS Lingkungan Bisnis SI012
+        © 2026 {AUTHOR.name} · UTS Lingkungan Bisnis
       </div>
     </footer>
   );
