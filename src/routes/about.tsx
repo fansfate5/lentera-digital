@@ -26,7 +26,7 @@ function AboutPage() {
           <p>
             Halo, saya {AUTHOR.name}, mahasiswa program studi Sistem Informasi di Universitas
             AMIKOM Yogyakarta. Blog ini saya buat untuk memenuhi tugas Ujian Tengah Semester
-            mata kuliah <strong>Lingkungan Bisnis (SI012)</strong> tahun akademik 2025/2026.
+            mata kuliah <strong>Lingkungan Bisnis</strong> tahun akademik 2025/2026.
           </p>
           <p>
             Fokus tulisan saya berkisar pada irisan antara teknologi, bisnis digital, dan
@@ -56,7 +56,7 @@ function AboutPage() {
           <div className="rounded-lg border border-border p-5">
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Mata Kuliah</p>
             <p className="mt-2 font-serif text-xl text-primary">Lingkungan Bisnis</p>
-            <p className="text-sm text-muted-foreground mt-1">SI012 · 2 SKS · Semester Genap 2025/2026</p>
+            <p className="text-sm text-muted-foreground mt-1">2 SKS · Semester Genap 2025/2026</p>
           </div>
         </div>
       </main>
