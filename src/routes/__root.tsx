@@ -74,7 +74,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Lentera Digital — Jurnal Mahasiswa AMIKOM" },
-      { name: "description", content: "Karya ilmiah mahasiswa Sistem Informasi AMIKOM mengenai pendidikan, bisnis digital, dan AI." },
+      {
+        name: "description",
+        content:
+          "Karya ilmiah mahasiswa Sistem Informasi AMIKOM mengenai pendidikan, bisnis digital, dan AI.",
+      },
       { name: "author", content: "Muhammad Izzul Fahmi Mustofa" },
       { property: "og:title", content: "Lentera Digital — Jurnal Mahasiswa AMIKOM" },
       { property: "og:description", content: "Karya ilmiah mahasiswa Sistem Informasi AMIKOM." },

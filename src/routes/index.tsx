@@ -8,7 +8,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Lentera Digital — Jurnal Mahasiswa AMIKOM" },
-      { name: "description", content: "Kumpulan karya ilmiah mahasiswa Sistem Informasi AMIKOM mengenai pendidikan, bisnis digital, dan teknologi AI." },
+      {
+        name: "description",
+        content:
+          "Kumpulan karya ilmiah mahasiswa Sistem Informasi AMIKOM mengenai pendidikan, bisnis digital, dan teknologi AI.",
+      },
     ],
   }),
   component: HomePage,

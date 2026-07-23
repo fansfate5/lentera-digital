@@ -7,7 +7,10 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "Tentang Penulis — Lentera Digital" },
-      { name: "description", content: `Profil singkat ${AUTHOR.name}, mahasiswa Sistem Informasi Universitas AMIKOM Yogyakarta.` },
+      {
+        name: "description",
+        content: `Profil singkat ${AUTHOR.name}, mahasiswa Sistem Informasi Universitas AMIKOM Yogyakarta.`,
+      },
     ],
   }),
   component: AboutPage,
@@ -20,23 +23,25 @@ function AboutPage() {
       <main className="flex-1 mx-auto max-w-3xl px-6 py-16">
         <p className="text-xs uppercase tracking-[0.25em] text-accent mb-4">Tentang Penulis</p>
         <h1 className="font-serif text-5xl text-primary leading-tight">{AUTHOR.name}</h1>
-        <p className="mt-3 text-lg text-muted-foreground">NIM {AUTHOR.nim} · {AUTHOR.program}</p>
+        <p className="mt-3 text-lg text-muted-foreground">
+          NIM {AUTHOR.nim} · {AUTHOR.program}
+        </p>
 
         <div className="mt-10 space-y-5 text-foreground/90 leading-relaxed">
           <p>
-            Halo, saya {AUTHOR.name}, mahasiswa program studi Sistem Informasi di Universitas
-            AMIKOM Yogyakarta. Blog ini saya buat untuk memenuhi tugas Ujian Tengah Semester
-            mata kuliah <strong>Lingkungan Bisnis</strong> tahun akademik 2025/2026.
+            Halo, saya {AUTHOR.name}, mahasiswa program studi Sistem Informasi di Universitas AMIKOM
+            Yogyakarta. Blog ini saya buat untuk memenuhi tugas Ujian Tengah Semester mata kuliah{" "}
+            <strong>Lingkungan Bisnis</strong> tahun akademik 2025/2026.
           </p>
           <p>
-            Fokus tulisan saya berkisar pada irisan antara teknologi, bisnis digital, dan
-            pendidikan — tiga area yang saling memengaruhi dalam membentuk wajah ekonomi modern.
-            Saya percaya bahwa mahasiswa Sistem Informasi memiliki posisi strategis untuk menjadi
-            jembatan antara kompleksitas teknologi dan kebutuhan nyata dunia usaha.
+            Fokus tulisan saya berkisar pada irisan antara teknologi, bisnis digital, dan pendidikan
+            — tiga area yang saling memengaruhi dalam membentuk wajah ekonomi modern. Saya percaya
+            bahwa mahasiswa Sistem Informasi memiliki posisi strategis untuk menjadi jembatan antara
+            kompleksitas teknologi dan kebutuhan nyata dunia usaha.
           </p>
           <p>
-            Setiap artikel disusun mengikuti struktur karya ilmiah dengan abstrak, pembahasan,
-            dan daftar referensi agar dapat dipertanggungjawabkan secara akademik.
+            Setiap artikel disusun mengikuti struktur karya ilmiah dengan abstrak, pembahasan, dan
+            daftar referensi agar dapat dipertanggungjawabkan secara akademik.
           </p>
         </div>
 

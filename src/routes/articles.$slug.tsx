@@ -24,7 +24,9 @@ export const Route = createFileRoute("/articles/$slug")({
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center">
         <h1 className="font-serif text-4xl text-primary">Artikel tidak ditemukan</h1>
-        <Link to="/" className="mt-4 inline-block text-accent underline">Kembali ke beranda</Link>
+        <Link to="/" className="mt-4 inline-block text-accent underline">
+          Kembali ke beranda
+        </Link>
       </div>
     </div>
   ),
@@ -43,9 +45,7 @@ function ArticlePage() {
             ← Semua artikel
           </Link>
 
-          <p className="mt-8 text-xs uppercase tracking-[0.25em] text-accent">
-            {article.category}
-          </p>
+          <p className="mt-8 text-xs uppercase tracking-[0.25em] text-accent">{article.category}</p>
           <h1 className="font-serif text-4xl md:text-5xl text-primary leading-[1.1] mt-3">
             {article.title}
           </h1>
