@@ -10,7 +10,10 @@ export default defineConfig(({ mode }) => {
 
   return {
     define: Object.fromEntries(
-      Object.entries(loadedEnv).map(([key, value]) => [`import.meta.env.${key}`, JSON.stringify(value)]),
+      Object.entries(loadedEnv).map(([key, value]) => [
+        `import.meta.env.${key}`,
+        JSON.stringify(value),
+      ]),
     ),
     resolve: {
       alias: { "@": `${process.cwd()}/src` },

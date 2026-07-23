@@ -80,13 +80,34 @@ export const articles: Article[] = [
       ],
     },
     references: [
-      { title: "UNESCO – Education in Emergencies", url: "https://www.unesco.org/en/emergencies/education" },
-      { title: "UNESCO – What You Need to Know About Education in Emergencies", url: "https://www.unesco.org/en/emergencies/education/need-know" },
-      { title: "Reuters – War Increasing Food Prices and Food Insecurity", url: "https://www.reuters.com/world/imf-world-bank-uns-world-food-program-say-war-is-increasing-food-insecurity-2026-04-08/" },
-      { title: "Reuters – War, Drought, and Hunger Crisis", url: "https://www.reuters.com/world/americas/war-drought-aid-shortfall-fuel-hunger-2026-global-report-says-2026-04-24/" },
-      { title: "The Guardian – Children Plunged Into Crisis by War", url: "https://www.theguardian.com/world/2026/apr/04/children-us-israel-iran-war-middle-east" },
-      { title: "A Resilient ICT4D Approach to Education Response During Crisis", url: "https://arxiv.org/abs/2108.09742" },
-      { title: "The Learning Crisis: Three Years After COVID-19", url: "https://arxiv.org/abs/2501.01260" },
+      {
+        title: "UNESCO – Education in Emergencies",
+        url: "https://www.unesco.org/en/emergencies/education",
+      },
+      {
+        title: "UNESCO – What You Need to Know About Education in Emergencies",
+        url: "https://www.unesco.org/en/emergencies/education/need-know",
+      },
+      {
+        title: "Reuters – War Increasing Food Prices and Food Insecurity",
+        url: "https://www.reuters.com/world/imf-world-bank-uns-world-food-program-say-war-is-increasing-food-insecurity-2026-04-08/",
+      },
+      {
+        title: "Reuters – War, Drought, and Hunger Crisis",
+        url: "https://www.reuters.com/world/americas/war-drought-aid-shortfall-fuel-hunger-2026-global-report-says-2026-04-24/",
+      },
+      {
+        title: "The Guardian – Children Plunged Into Crisis by War",
+        url: "https://www.theguardian.com/world/2026/apr/04/children-us-israel-iran-war-middle-east",
+      },
+      {
+        title: "A Resilient ICT4D Approach to Education Response During Crisis",
+        url: "https://arxiv.org/abs/2108.09742",
+      },
+      {
+        title: "The Learning Crisis: Three Years After COVID-19",
+        url: "https://arxiv.org/abs/2501.01260",
+      },
     ],
   },
   {
@@ -109,13 +130,16 @@ export const articles: Article[] = [
       {
         heading: "2. Model Bisnis yang Layak Dijalankan",
         body: [
-          { type: "list", items: [
-            "AI Consulting Sprint — paket pendampingan singkat (2–4 minggu) untuk membantu UMKM mengidentifikasi proses yang dapat diotomasi.",
-            "Custom Chatbot & Customer Service AI — pembuatan chatbot WhatsApp/Instagram berbasis LLM untuk merchant lokal.",
-            "Content Automation — layanan pembuatan konten media sosial otomatis dengan workflow Make/n8n + OpenAI.",
-            "AI Tutor Niche — platform belajar untuk topik spesifik (misal sertifikasi cloud, bahasa daerah) berbasis Retrieval-Augmented Generation.",
-            "Data Insight as a Service — dashboard analitik mingguan untuk UMKM e-commerce.",
-          ]},
+          {
+            type: "list",
+            items: [
+              "AI Consulting Sprint — paket pendampingan singkat (2–4 minggu) untuk membantu UMKM mengidentifikasi proses yang dapat diotomasi.",
+              "Custom Chatbot & Customer Service AI — pembuatan chatbot WhatsApp/Instagram berbasis LLM untuk merchant lokal.",
+              "Content Automation — layanan pembuatan konten media sosial otomatis dengan workflow Make/n8n + OpenAI.",
+              "AI Tutor Niche — platform belajar untuk topik spesifik (misal sertifikasi cloud, bahasa daerah) berbasis Retrieval-Augmented Generation.",
+              "Data Insight as a Service — dashboard analitik mingguan untuk UMKM e-commerce.",
+            ],
+          },
         ],
       },
       {
@@ -144,10 +168,19 @@ export const articles: Article[] = [
       ],
     },
     references: [
-      { title: "McKinsey – The Economic Potential of Generative AI", url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier" },
+      {
+        title: "McKinsey – The Economic Potential of Generative AI",
+        url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+      },
       { title: "OpenAI Platform Documentation", url: "https://platform.openai.com/docs" },
-      { title: "UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi", url: "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022" },
-      { title: "World Economic Forum – Future of Jobs Report 2025", url: "https://www.weforum.org/publications/the-future-of-jobs-report-2025/" },
+      {
+        title: "UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi",
+        url: "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022",
+      },
+      {
+        title: "World Economic Forum – Future of Jobs Report 2025",
+        url: "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      },
       { title: "Stanford HAI – AI Index Report 2024", url: "https://aiindex.stanford.edu/report/" },
     ],
   },
@@ -170,13 +203,16 @@ export const articles: Article[] = [
       {
         heading: "2. Niche yang Menjanjikan",
         body: [
-          { type: "list", items: [
-            "SaaS untuk UMKM — aplikasi kasir, inventaris, dan laporan keuangan sederhana berbasis cloud.",
-            "EdTech Vertikal — aplikasi belajar fokus pada bidang spesifik seperti coding, bahasa Jepang, atau persiapan sertifikasi profesi.",
-            "Marketplace Komunitas — aplikasi penghubung produsen lokal dengan konsumen di kota tertentu.",
-            "Internal Tools — pengembangan dashboard internal untuk perusahaan menengah dengan model project-based.",
-            "Mobile Productivity — aplikasi catatan, pelacak kebiasaan, dan manajemen tugas dengan integrasi AI.",
-          ]},
+          {
+            type: "list",
+            items: [
+              "SaaS untuk UMKM — aplikasi kasir, inventaris, dan laporan keuangan sederhana berbasis cloud.",
+              "EdTech Vertikal — aplikasi belajar fokus pada bidang spesifik seperti coding, bahasa Jepang, atau persiapan sertifikasi profesi.",
+              "Marketplace Komunitas — aplikasi penghubung produsen lokal dengan konsumen di kota tertentu.",
+              "Internal Tools — pengembangan dashboard internal untuk perusahaan menengah dengan model project-based.",
+              "Mobile Productivity — aplikasi catatan, pelacak kebiasaan, dan manajemen tugas dengan integrasi AI.",
+            ],
+          },
         ],
       },
       {
@@ -212,7 +248,10 @@ export const articles: Article[] = [
     },
     references: [
       { title: "APJII – Survei Penetrasi Internet Indonesia 2024", url: "https://apjii.or.id/" },
-      { title: "Statista – Mobile App Revenue Worldwide", url: "https://www.statista.com/statistics/269025/worldwide-mobile-app-revenue-forecast/" },
+      {
+        title: "Statista – Mobile App Revenue Worldwide",
+        url: "https://www.statista.com/statistics/269025/worldwide-mobile-app-revenue-forecast/",
+      },
       { title: "Google – Android Developer Documentation", url: "https://developer.android.com/" },
       { title: "Vercel – Frontend Cloud Documentation", url: "https://vercel.com/docs" },
       { title: "Supabase – Backend as a Service", url: "https://supabase.com/docs" },
